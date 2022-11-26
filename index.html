@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+        name="description" content="KIRA for action's mission is to provide opportunities for those who suffer from poverty, by equipping a sustainable community with well-being, food and sharing good news with them.">
+
+        <!-- Required link tags -->
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./images/logo.png">
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <title>Kira For Action</title>
+        <style>
+            #img-container {
+                height: clamp(450px , 100vw , 100vh);
+                background: linear-gradient(rgba(0, 0, 0, 0.9) ,rgba(0, 0, 0, 0.5)), url('./images/img-1.jpg') no-repeat center / cover;
+            }
+            header {
+                transition: background-color 0.1s linear;
+            }
+            .icon {
+                font-size: 2rem;
+            }
+            .mission-img {
+                min-height: 300px;
+                max-height: max-content;
+                /* margin: 0 -1rem; */
+                background: url("https://source.unsplash.com/AEaTUnvneik") no-repeat right / cover;
+            }
+            .education-img {
+                /* min-height: 300px;
+                max-height: max-content; */
+                /* height: 50vw; */
+                height: clamp(30vw, 300px , 40vw);
+                /* margin: 0 -1rem; */
+                background: url("https://source.unsplash.com/lXvMlLRhOi8") no-repeat left / cover;
+            }
+            p {
+                font-size: clamp(0.8rem, 3vw, 1rem);
+                /* font-size: 3vw; */
+            }
+            h2 {
+                font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+            }
+            .footer-link {
+                text-decoration: none;
+            }
+            .footer-link:hover {
+                text-decoration: #fff underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="container-fluid    fixed-top">
+            <div class="container-xxl p-0 ">
+                <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent">
+                    <div class="container-fluid">
+
+                        <a class="navbar-brand " href="#">
+                            <h4 class="text-warning mb-0">KIRA FOR ACTION</h4>
+                        </a>
+
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onfocus="this.style.boxShadow = 'none'">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">Our Mission</a>
+                                            <a class="dropdown-item" href="#">Our Vision</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">Photographs</a>
+                                            <a class="dropdown-item" href="#">Videos</a>
+                                            <a class="dropdown-item" href="#">FAQ</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">DONATE</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTACT</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div id="img-container" class=" container-fluid  m-0">
+            <div class="container p-0 h-100 d-flex flex-column gap-4 justify-content-center align-items-center">
+                <h1 class="text-center text-white  fw-bolder">CHANGE THE LIFE OF THOSE, <br> WHO HAS NO HOPE
+                    </h1>
+                <p class="text-center text-white">
+                    We are ready to provide better service to make world happy
+                </p>
+            </div>
+        </div>
+        <script>
+            const imgContainer = document.querySelector("#img-container");
+            const header = document.querySelector("header")
+            const options = { // rootMargin: "-100px"
+                threshold: 0.8
+            };
+
+
+            const observer = new IntersectionObserver((entries, observer) => {
+
+                entries.forEach((entry) => {
+                    console.log(entry.isIntersecting);
+                    if (!entry.isIntersecting) {
+                        header.classList.add("bg-dark");
+                        header.classList.add("shadow");
+
+                    } else {
+                        console.log("else");
+                        header.classList.remove("bg-dark");
+                        header.classList.remove("shadow");
+                    }
+
+                })
+            }, options)
+            observer.observe(imgContainer)
+        </script>
+        <div class="container-fluid   pt-4">
+            <div class="container p-0">
+
+                <h2 class="m-2 text-center">
+                    GET INVOLVED
+                </h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vitae amet ipsum at expedita excepturi.
+                </p>
+            </div>
+            <div class="container ">
+                <div class="row gap-5 my-3  ">
+                    <div class="col-12 col-sm p-0 ">
+                        <div class="container-fluid shadow-sm px-0 pt-1" style="background-color:var(--bs-gray-200) ;">
+                            <i class="text-center w-100 mt-4 fas fa-bullhorn icon"></i>
+                            <h6 class="text-center my-3">
+                                VOLUNTEERING
+                            </h6>
+
+                            <div class="container-fluid text-bg-dark p-3">
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-sm p-0 ">
+                        <div class="container-fluid shadow-sm px-0 pt-1" style="background-color:var(--bs-gray-200) ;">
+                            <i class="text-center w-100 mt-4 fas fa-donate icon "></i>
+                            <h6 class="text-center my-3">
+                                DONATING
+                            </h6>
+
+                            <div class="container-fluid text-bg-warning p-3">
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm p-0 ">
+                        <div class="container-fluid shadow-sm px-0 pt-1" style="background-color:var(--bs-gray-200) ;">
+                            <i class=" text-center w-100 mt-4 fas fa-hand-holding-heart icon "></i>
+                            <h6 class="text-center my-3">
+                                SUPPORTING
+                            </h6>
+
+                            <div class="container-fluid text-bg-dark p-3">
+                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid p-0  " style="background-color:rgb(34, 4, 4);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm p-0">
+                        <div class="container-fluid mission-img "></div>
+                    </div>
+                    <div class="col-sm ">
+                        <div class="container px-2 py-4">
+                            <h2 class="text-white fw-bolder">Our Mission</h2>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
+                            </p>
+                            <div class="w-100 text-center text-sm-start">
+                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0  py-4">
+            <div class="container">
+                <h2 class="text-center fw-bolder my-3 ">About Us</h2>
+                <p class=" text-secondry" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                <div class="w-100 text-center">
+                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto my-2">LEARN MORE</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid  px-0" style="background-color:rgb(34, 4, 4);">
+            <div class="container ">
+                <div class="row flex-column-reverse flex-sm-row">
+
+                    <div class="col-sm ">
+                        <div class="container px-2 py-4">
+                            <h2 class="text-white fw-bolder">Education For All</h2>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
+                            </p>
+                            <div class="w-100 text-center text-sm-start">
+                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm p-0">
+                        <div class="container-fluid px education-img "></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid  pt-5 px-0 text-bg-dark">
+
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm ">
+                        <div class="container-fluid">
+                            <h6 class="text-success text-center w-100">ORGANIZATION</h6>
+                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">HOME</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">ABOUT</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">CONTACT</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">DONATE</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm ">
+                        <div class="container-fluid">
+                            <h6 class="text-success text-center w-100">DISCOVER</h6>
+                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">PHOTOGRAPHS</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">VIDEOS</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">STORIES</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">FAQ</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm ">
+                        <div class="container-fluid">
+                            <h6 class="text-success text-center w-100">ABOUT</h6>
+                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">OUR VISION</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">OUR MISSION</p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class=" footer-link  ">
+                                        <p class="text-white fw-semibold">EDUCATION</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm ">
+                        <div class="container-fluid">
+                            <h6 class="text-success text-center w-100">CONTACT</h6>
+                            <p class="text-white text-center  fw-semibold">
+                                ADDRESSS
+                            </p>
+
+                            <p class="text-white  fw-semibold mx-auto" style="width: max-content;">
+                                Kira For Action<br>
+                                21 Revolution street<br>
+                                <b>Austin , America</b><br>
+                                <a href="mailto:mail@example.com" class="footer-link">mail@example.com</a>
+
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-3 border-top border-white ">
+                    <p class="text-white text-center fw-semibold ">
+                        Copyright &copy; 2022 KIRA FOR ACTION.</p>
+                   </div>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
+</html>
