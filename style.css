@@ -1,124 +1,160 @@
-html {
-    scroll-behavior: smooth;
-}
+    :root {
+        --clr-bg: #2D2620;
+        --clr-main: #ECC731;
 
-* {
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+        --color-primary: hsl(34, 100%, 44%);
+        --color-secondry: #555d31;
+        --color-other: #b22d3a;
+    }
 
-}
 
-body {
-    --color-primary: hsl(34, 100%, 44%);
-    --color-secondry: #555d31;
-    --color-other: #b22d3a;
-    /* font-family:  Geneva, Verdana, sans-serif; */
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    * {
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+
+    }
+    
+    .clr-bg{
+        background-color: var(--clr-bg);
+    }
+
+    header {
+        transition: background-color 0.1s linear;
+    }
+    
+
+    .icon {
+        font-size: 2rem;
+    }
+
+
+    #img-container {
+        height: clamp(450px, 100vw, 100vh);
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/img-1.jpg') no-repeat center / cover;
+    }
+
+
+    .mission-img {
+        min-height: 300px;
+        max-height: max-content;
+        /* margin: 0 -1rem; */
+        background: url("https://source.unsplash.com/AEaTUnvneik") no-repeat right / cover;
+    }
+
+    .education-img {
+        /* min-height: 300px;
+        max-height: max-content; */
+        /* height: 50vw; */
+        height: clamp(300px, 40vh, 40vw);
+        /* margin: 0 -1rem; */
+        background: url("https://source.unsplash.com/lXvMlLRhOi8") no-repeat left / cover;
+    }
+
+    p {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        /* font-size: 3vw; */
+    }
+
+    h2 {
+        font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+    }
+
+    .footer-link {
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        text-decoration: #fff underline;
+    }
+
+
+
+    @media screen and (min-width: 576px) {
+
+        .child-border .nav-item {
+            border-right: 1px solid rgba(128, 128, 128, 0.489);
+        }
+    }
+
+
+    @media screen and (max-width:768px) {
+
+        #logo {
+            height: 65px !important;
+        }
+    }
+
+
    
-}
-header {
-    box-shadow: 0 2px 12px rgb(0, 0, 0, 0.2);
-}
 
+    .nav-a {
+        color: var(--color-secondry) !important;
 
-
-
- @media screen and (max-width:576px) {
-
-    h1{
-        font-size: 2rem !important;
     }
-    h2{
-        font-size: 1.4rem !important;
+
+    .nav-a:hover {
+        color: var(--color-other) !important;
     }
-    h3{
-        font-size: 1.2rem !important;
+
+    a:focus {
+        border: none;
     }
-    h4{
-        font-size: 1.1rem !important;
+
+    /* Hide the images by default */
+    .slide {
+        display: none;
     }
-    
-} 
-@media screen and (min-width: 576px) {
 
-    .child-border .nav-item {
-        border-right: 1px solid rgba(128, 128, 128, 0.489);
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: clamp(200px, 50vw, 450px);
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(246, 241, 241, 0.2);
     }
-}
 
-
-@media screen and (max-width:768px) {
-  
-    #logo{
-        height: 65px !important;
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
     }
-}
 
-
-a{
-    text-decoration: none !important;
-}
-.nav-a {
-    color: var(--color-secondry) !important;
-    
-}
-
-.nav-a:hover {
-    color: var(--color-other) !important;
-}
-a:focus{
-    border:none;
-}
-
-/* Hide the images by default */
-.slide {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: clamp(200px , 50vw ,450px);
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(246, 241, 241, 0.2);
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(246, 241, 241, 0.6);
-}
-
-/* Fading animation */
-.fadeSlide {
-    animation: fade 0.1s linear;
-
-}
- 
-@keyframes fade {
-    0% {
-       opacity: 0.6;
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(246, 241, 241, 0.6);
     }
-    
-    100% {
-        opacity: 1;
-    }
-}  
 
-.logo {
-    transition: height 60ms linear;
-}
+    /* Fading animation */
+    .fadeSlide {
+        animation: fade 0.1s linear;
+
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .logo {
+        transition: height 60ms linear;
+    }

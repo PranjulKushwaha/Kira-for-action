@@ -15,12 +15,10 @@
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="style.css">
-        
+         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
-        <header class="container-fluid    fixed-top">
+         <header class="container-fluid    fixed-top  clr-bg shadow">
             <div class="container-xxl p-0 ">
                 <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent py-0">
                     <div class="container-fluid">
@@ -43,7 +41,7 @@
                                 <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
 
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                                        <a class="nav-link " aria-current="page" href="./index.html">HOME</a>
                                     </li>
 
                                     <li class="nav-item dropdown">
@@ -55,7 +53,7 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownDiscover" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER</a>
+                                        <a class="nav-link active dropdown-toggle" href="#" id="dropdownDiscover" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownDiscover">
                                             <a class="dropdown-item" href="./Gallery.html#photographs">Photographs</a>
                                             <a class="dropdown-item" href="./Gallery.html#videos">Videos</a>
@@ -65,11 +63,11 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./donate.html">DONATE</a>
+                                        <a class="nav-link " href="./donate.html">DONATE</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./contact.html">CONTACT</a>
+                                        <a class="nav-link " href="./contact.html">CONTACT</a>
                                     </li>
                                 </ul>
 
@@ -80,148 +78,11 @@
             </div>
         </header>
 
-
-        <div id="img-container" class=" container-fluid  m-0">
-            <div class="container p-0 h-100 d-flex flex-column gap-4 justify-content-center align-items-center">
-                <h1 class="text-center text-white  fw-bolder">CHANGE THE LIFE OF THOSE, <br> WHO HAS NO HOPE
-                    </h1>
-                <p class="text-center text-white">
-                    We are ready to provide better service to make world happy
-                </p>
-            </div>
-        </div>
-        <script>
-            const imgContainer = document.querySelector("#img-container");
-            const header = document.querySelector("header")
-            const options = { // rootMargin: "-100px"
-                threshold: 0.8
-            };
-
-
-            const observer = new IntersectionObserver((entries, observer) => {
-
-                entries.forEach((entry) => {
-                    console.log(entry.isIntersecting);
-                    if (!entry.isIntersecting) {
-                        header.classList.add("clr-bg");
-                        header.classList.add("shadow");
-
-                    } else {
-                        console.log("else");
-                        header.classList.remove("clr-bg");
-                        header.classList.remove("shadow");
-                    }
-
-                })
-            }, options)
-            observer.observe(imgContainer)
-        </script>
-        <div class="container-fluid   pt-4">
-            <div class="container-xxl p-0">
-
-                <h2 class="m-2 text-center">
-                    GET INVOLVED
-                </h2>
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vitae amet ipsum at expedita excepturi.
-                </p>
-            </div>
-            <div class="container-xxl ">
-                <div class="row gap-5 my-3  ">
-                    <div class="col  p-0 ">
-                        <div class="container-fluid shadow px-0 pt-1">
-                            <i class="text-center w-100 mt-4 fas fa-bullhorn icon"></i>
-                            <h6 class="text-center my-3">
-                                VOLUNTEERING
-                            </h6>
-
-                            <div class="container-fluid  p-3">
-                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col  p-0 ">
-                        <div class="container-fluid shadow px-0 pt-1" >
-                            <i class="text-center w-100 mt-4 fas fa-donate icon "></i>
-                            <h6 class="text-center my-3">
-                                DONATING
-                            </h6>
-
-                            <div class="container-fluid  p-3">
-                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm p-0 ">
-                        <div class="container-fluid shadow px-0 pt-1" >
-                            <i class=" text-center w-100 mt-4 fas fa-hand-holding-heart icon "></i>
-                            <h6 class="text-center my-3">
-                                SUPPORTING
-                            </h6>
-
-                            <div class="container-fluid  p-3">
-                                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="container-fluid p-0 clr-bg">
-            <div class="container-xxl">
-                <div class="row">
-                    <div class="col-sm p-0">
-                        <div class="container-fluid mission-img "></div>
-                    </div>
-                    <div class="col-sm ">
-                        <div class="container px-2 py-4">
-                            <h2 class="text-white fw-bolder">Our Mission</h2>
-                            <p class="text-white">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
-                            </p>
-                            <div class="w-100 text-center text-sm-start">
-                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid p-0  py-4">
-            <div class="container-xxl">
-                <h2 class="text-center fw-bolder my-3 ">About Us</h2>
-                <p class=" text-secondry" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
-                <div class="w-100 text-center">
-                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto my-2">LEARN MORE</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="container-fluid  px-0 clr-bg">
-            <div class="container-xxl ">
-                <div class="row flex-column-reverse flex-sm-row">
-
-                    <div class="col-sm ">
-                        <div class="container px-2 py-4">
-                            <h2 class="text-white fw-bolder">Education For All</h2>
-                            <p class="text-white">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
-                            </p>
-                            <div class="w-100 text-center text-sm-start">
-                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm p-0">
-                        <div class="container-fluid px education-img "></div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="container-fluid fw-2x d-flex justify-content-center align-items-center vh-100">
+            <h1 class="text-warning">Coming Soon.....</h1>
         </div>
 
-        <footer class="container-fluid  pt-5 px-0 text-bg-dark">
+ <footer class="container-fluid  pt-5 px-0 text-bg-dark">
 
             <div class="container-xxl ">
                 <div class="row">
