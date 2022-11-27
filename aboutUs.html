@@ -10,15 +10,22 @@
         <!-- Required link tags -->
         <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="./images/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
         <link rel="stylesheet" href="style.css">
+        <style>
+            .bg-image {
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/peter-gargiulo-cGNCepznaV8-unsplash.jpg") no-repeat center / cover;
+                height: 425px;
+            }
+        </style>
     </head>
     <body>
-         <header class="container-fluid    fixed-top  clr-bg shadow">
+        <header class="container-fluid    fixed-top  clr-bg shadow">
             <div class="container-xxl p-0 ">
                 <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent py-0">
                     <div class="container-fluid">
@@ -32,11 +39,12 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <h6  id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
+                                <h6 id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
                                 <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent " data-bs-dismiss="offcanvas" aria-label="Close">
-                                     <i class="text-white fas fa-times fa-2x"></i></button>
+                                    <i class="text-white fas fa-times fa-2x"></i>
+                                </button>
                             </div>
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
@@ -79,11 +87,54 @@
             </div>
         </header>
 
-        <div class="container-fluid fw-2x d-flex justify-content-center align-items-center vh-100">
-            <h1 class="text-warning">Coming Soon.....</h1>
+        <div class="container-fluid bg-image d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h1 class="text-white text-center  fw-bolder">
+                    ABOUT
+                    <span class="text-warning">US</span>
+                </h1>
+                <p class="text-white col-lg-8 mx-auto lh-base mt-4">
+                    Our organisation is focused on Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum saepe quo velit. Sequi expedita porro sed, error ipsa at veritatis.
+                </p>
+            </div>
         </div>
 
- <footer class="container-fluid  pt-5 px-0 text-bg-dark">
+        <div id="ourVision" class="container-fluid bg-white p-0  py-4 " >
+            <div class="container">
+                <h4 class="text-center fw-bolder my-3 ">OUR <span class="text-warning">MISSION</span></h4>
+                <p class=" text-black lh-base mx-auto col-md-8" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                
+
+            </div>
+        </div>
+        <div id="ourMission" class="container-fluid bg-white p-0  py-4 " >
+            <div class="container">
+                <h4 class="text-center fw-bolder my-3 ">OUR <span class="text-warning">VISION</span></h4>
+                <p class=" text-black lh-base mx-auto col-md-8" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                
+
+            </div>
+        </div>
+        <div class="container-fluid bg-white p-0  py-4 " >
+            <div class="container">
+                <h4 class="text-center fw-bolder my-3 ">OUR <span class="text-warning">TEAM</span></h4>
+                <p class=" text-black lh-base mx-auto col-md-8" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                
+
+            </div>
+        </div>
+        <div class="container-fluid bg-white p-0  py-4 " >
+            <div class="container">
+                <h4 class="text-center fw-bolder my-3 ">OUR <span class="text-warning">HISTORY</span></h4>
+                <p class=" text-black lh-base mx-auto col-md-8" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                
+
+            </div>
+        </div>
+
+       
+
+        <footer class="container-fluid  pt-5 px-0 clr-bg">
 
             <div class="container-xxl ">
                 <div class="row">
@@ -186,7 +237,7 @@
                 <div class="container-xxl p-3 border-top border-white ">
                     <p class="text-white text-center fw-semibold ">
                         Copyright &copy; 2022 KIRA FOR ACTION.</p>
-                   </div>
+                </div>
             </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
