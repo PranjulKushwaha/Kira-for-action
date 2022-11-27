@@ -35,7 +35,7 @@
                             <span class="navbar-toggler-fa-2x"></span>
                         </button>
 
-                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end clr-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h6 id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
                                 <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent " data-bs-dismiss="offcanvas" aria-label="Close">
@@ -115,13 +115,13 @@
                 entries.forEach((entry) => {
                     console.log(entry.isIntersecting);
                     if (!entry.isIntersecting) {
-                        header.classList.add("bg-dark");
-                        header.classList.add("shadow");
+                        header.classList.add("clr-bg");
+                        header.classList.add("shadow-lg");
 
                     } else {
                         console.log("else");
-                        header.classList.remove("bg-dark");
-                        header.classList.remove("shadow");
+                        header.classList.remove("clr-bg");
+                        header.classList.remove("shadow-lg");
                     }
 
                 })
@@ -141,8 +141,8 @@
                 </p>
             </div>
             <div class="container ">
-                <div class="row gap-3 align-items-center justify-content-center pb-4">
-                    <div class="col ">
+                <div class="row  justify-content-enter  pb-4">
+                    <div class=" col-12  col-sm-6  col-md-4  ">
                         <div class="container  shadow  py-3">
                             <i class="text-center text-warning  w-100  fas fa-bullhorn fa-2x"></i>
                             <h4 class="text-center my-3">
@@ -162,7 +162,7 @@
 
                         </div>
                     </div>
-                    <div class=" col  ">
+                    <div class="  col-12  mt-4 mt-md-0  col-sm-6 col-md-4   ">
                         <div class="container  shadow  py-3">
                             <i class="text-center text-warning  w-100  fas fa-donate fa-2x "></i>
                             <h4 class="text-center my-3">
@@ -182,7 +182,7 @@
 
                         </div>
                     </div>
-                    <div class="col-sm ">
+                    <div class=" col-12 mt-4 mt-md-0 col-md-4  ">
                         <div class="container  shadow  py-3">
                             <i class=" text-center text-warning  w-100  fas fa-hand-holding-heart fa-2x "></i>
                             <h4 class="text-center my-3">
@@ -207,20 +207,22 @@
             </div>
         </div>
 
-        <div class="container-fluid p-0  " style="background-color: var(--bs-gray-300) ;" >
-            <div class="container">
+        <div class="container-fluid p-0  "  >
+            <div class="container clr-bg">
                 <div class="row">
                     <div class="col-sm p-0">
                         <div class="container-fluid mission-img "></div>
                     </div>
                     <div class="col-sm ">
-                        <div class="container px-2 py-4">
-                            <h2 class=" fw-bolder">Our Mission</h2>
-                            <p class="" style="text-align: justify;">
+                        <div class="container px-2 py-4 ">
+                            <h2 class=" fw-bolder mt-4 mb-3 text-sm-start text-center">OUR <span class="text-warning">MISSION  </span> </h2>
+                            <p class="lh-base" style="text-align: justify;">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
+                                <br>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, corporis!
                             </p>
-                            <div class="w-100 text-center text-sm-start">
-                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
+                            <div class="w-100 text-center text-sm-start mt-5 mb-3">
+                                <a href="./aboutUs.html#ourMission" class="btn btn-outline-warning rounded-0 ">KNOW MORE  &#10095;</a>
                             </div>
                         </div>
                     </div>
@@ -229,26 +231,28 @@
         </div>
         <div class="container-fluid bg-white p-0  py-4 " >
             <div class="container">
-                <h2 class="text-center fw-bolder my-3 ">About Us</h2>
-                <p class=" text-black lh-base mx-auto" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                <h2 class="text-center fw-bolder my-3 ">ABOUT <span class="text-warning">US</span></h2>
+                <p class=" text-black lh-base mx-auto col-md-8" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
                 <div class="w-100 text-center">
-                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto mb-2 mt-3 mt-md-4">LEARN MORE</a>
+                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto mb-2 mt-3 mt-md-4">LEARN MORE &#10095;</a>
                 </div>
 
             </div>
         </div>
-        <div class="container-fluid  px-0  " style="background-color: var(--bs-gray-300) ;">
-            <div class="container ">
+        <div class="container-fluid  px-0  " >
+            <div class="container  clr-bg">
                 <div class="row flex-column-reverse flex-sm-row align-items-stretch">
 
                     <div class="col-sm ">
-                        <div class="container px-2 py-4">
-                            <h2 class=" fw-bolder">Education For All</h2>
-                            <p class="" style="text-align: justify;">
+                        <div class="container px-2 py-4 ">
+                            <h2 class=" fw-bolder mt-4 mb-3 text-sm-start text-center">EDUCATION <span class="text-warning">FOR ALL</span></h2>
+                            <p class="lh-base" style="text-align: justify;">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
+                               <br>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, mollitia!
                             </p>
-                            <div class="w-100 text-center text-sm-start">
-                                <a href="#" class="btn btn-warning rounded-0 text-white">Donate Now</a>
+                            <div class="w-100 text-center text-sm-start mt-5 mb-3">
+                                <a href="./aboutUs.html#education" class="btn btn-outline-warning rounded-0 ">KNOW MORE  &#10095;</a>
                             </div>
                         </div>
                     </div>
@@ -262,13 +266,51 @@
             </div>
         </div>
 
-        <footer class="container-fluid  pt-5 px-0 text-white bg-dark">
+        <div class="container-fluid p-4 p-sm-5">
+            <div class="container pt-2 mb-md-3">
+                <h2 class=" text-center fw-bolder">
+                    HELP <span class="text-warning">END</span> HUNGER <span class="text-warning">TODAY</span>
+                </h2>
+            </div>
+            <div class="row pb-3">
+                <div class="col-12  col-sm-6 col-lg-3  p-sm-3 py-2 ">
+                    <div class="container   shadow rounded text-center p-3" >
+                        <i class="fas fa-calendar-day fa-3x my-4 text-warning"></i>
+                        <h4 class="fw-semibold">GIVE TODAY</h4>
+                        <p class="text-secondary p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-12  col-sm-6 col-lg-3  p-sm-3 py-2 ">
+                    <div class="container   shadow rounded text-center p-3" >
+                        <i class="fas fa-calendar-alt fa-3x my-4  text-warning"></i>
+                        <h4 class="fw-semibold">GIVE MONTHLY</h4>
+                        <p class="text-secondary p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-12  col-sm-6 col-lg-3  p-sm-3 py-2 ">
+                    <div class="container   shadow rounded text-center p-3" >
+                        <i class="fas  fa-hand-holding-usd fa-3x my-4 text-warning"></i>
+                       <h4 class="fw-semibold">FUNDRAISE</h4>
+                        <p class="text-secondary p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-12  col-sm-6 col-lg-3  p-sm-3 py-2 ">
+                    <div class="container   shadow rounded text-center p-3" >
+                        <i class="fas fa-hands-helping fa-3x my-4 text-warning"></i>  
+                        <h4 class="fw-semibold">VOLUNTEER</h4>
+                        <p class="text-secondary p-2">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
 
             <div class="container ">
                 <div class="row">
                     <div class="col-sm ">
                         <div class="container-fluid">
-                            <h6 class="clr-main  text-center w-100">ORGANIZATION</h6>
+                            <h6 class="text-warning  text-center w-100">ORGANIZATION</h6>
                             <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./index.html" class=" footer-link  ">
@@ -295,7 +337,7 @@
                     </div>
                     <div class="col-sm ">
                         <div class="container-fluid">
-                            <h6 class="clr-main  text-center w-100">DISCOVER</h6>
+                            <h6 class="text-warning  text-center w-100">DISCOVER</h6>
                             <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./Gallery.html#photographs" class=" footer-link  ">
@@ -323,7 +365,7 @@
                     
                     <div class="col-sm ">
                         <div class="container-fluid">
-                            <h6 class="clr-main  text-center w-100">ABOUT</h6>
+                            <h6 class="text-warning  text-center w-100">ABOUT</h6>
                             <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./aboutUs.html#OurVision" class=" footer-link  ">
@@ -346,7 +388,7 @@
                     </div>
                     <div class="col-sm ">
                         <div class="container-fluid">
-                            <h6 class="clr-main  text-center w-100">CONTACT</h6>
+                            <h6 class="text-warning  text-center w-100">CONTACT</h6>
                             <p class="text-white text-center  fw-semibold">
                                 ADDRESSS
                             </p>

@@ -1,7 +1,7 @@
     :root {
-        --clr-bg: #707274;
+        --clr-bg: rgb(32, 32, 32);
         /* --clr-bg: #674426; */
-        --clr-main: #ECC731;
+        /* --clr-main: #ECC731; */
 
 
         /* 
@@ -28,6 +28,8 @@
 
     .clr-bg {
         background-color: var(--clr-bg);
+
+        color: #fff;
     }
 
     .clr-main {
@@ -47,12 +49,12 @@
 
 
     .mission-img {
-        min-height: 300px;
+        height: 100%;
         background: url("./images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat center / cover;
     }
 
     .education-img {
-        min-height: 300px;
+        height: 100%;
         background: url("./images/ben-white-83tkHLPgg2Q-unsplash.jpg") no-repeat center / cover;
     }
 
@@ -65,7 +67,7 @@
         font-size: clamp(1.4rem, 2.5vw, 2.4rem);
     }
 
-    h6 {
+    h4 {
         font-size: clamp(1.1rem, 2vw, 1.4rem);
     }
 
@@ -86,7 +88,18 @@
 
 
 
+    @media screen and (max-width: 576px) {
+
+        .education-img , .mission-img{
+            height: 300px;
+        }
+
+    }
+
+
     @media screen and (min-width: 576px) {
+
+       
 
         .child-border .nav-item {
             border-right: 1px solid rgba(128, 128, 128, 0.489);
