@@ -1,7 +1,7 @@
     :root {
         --clr-bg: #2D2620;
         --clr-main: #ECC731;
-
+        --bs-navbar-hover-color:#ECC731;
         --color-primary: hsl(34, 100%, 44%);
         --color-secondry: #555d31;
         --color-other: #b22d3a;
@@ -19,18 +19,18 @@
 
     }
     
-    .clr-bg{
+    .clr-bg , body{
         background-color: var(--clr-bg);
+    }
+
+    .clr-main {
+        color: var(--clr-main);
     }
 
     header {
         transition: background-color 0.1s linear;
     }
     
-
-    .icon {
-        font-size: 2rem;
-    }
 
 
     #img-container {
@@ -71,6 +71,21 @@
     .footer-link:hover {
         text-decoration: #fff underline;
     }
+
+
+
+    .responsive-img{
+        /* height:max(100vw , 30vw); */
+        height: ;
+    }
+
+
+
+
+
+
+
+
 
 
 

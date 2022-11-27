@@ -8,8 +8,8 @@
         <title>Kira For Action</title>
 
         <!-- Required link tags -->
-        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="./images/logo.png">
+        <link rel="shortcut fa-2x" href="./images/logo.png" type="image/x-fa-2x">
+        <link rel="apple-touch-fa-2x" href="./images/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <!-- Bootstrap CSS v5.2.1 -->
@@ -31,15 +31,17 @@
                         </a>
 
                         <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onfocus="this.style.boxShadow = 'none'">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-fa-2x"></span>
                         </button>
 
-                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end clr-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <h6  id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
+                                <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent " data-bs-dismiss="offcanvas" aria-label="Close">
+                                     <i class="text-white fas fa-times fa-2x"></i></button>
                             </div>
                             <div class="offcanvas-body">
+
                                 <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
 
                                     <li class="nav-item">
@@ -81,13 +83,15 @@
         </header>
 
 
-        <div id="img-container" class=" container-fluid  m-0">
-            <div class="container p-0 h-100 d-flex flex-column gap-4 justify-content-center align-items-center">
-                <h1 class="text-center text-white  fw-bolder">CHANGE THE LIFE OF THOSE, <br> WHO HAS NO HOPE
+        <div id="img-container" class=" container-fluid  m-0 ">
+            <div class="container p-0 h-100 d-flex flex-column  justify-content-center align-items-center ">
+                <h1 class="text-center text-white  fw-bold lh-1">
+                    CHANGE THE <span class="text-warning">LIFE </span> OF THOSE, <br> WHO HAS NO <span class="text-warning">HOPE</span>
                     </h1>
-                <p class="text-center text-white">
-                    We are ready to provide better service to make world happy
+                <p class="text-center text-white my-md-4 my-2">
+                    Be the reason of someones's smile today
                 </p>
+                <a href="./donate.html" class="btn btn-outline-warning rounded-0 shadow  mt-4 ">DONATE NOW</a>
             </div>
         </div>
         <script>
@@ -116,59 +120,59 @@
             }, options)
             observer.observe(imgContainer)
         </script>
-        <div class="container-fluid   pt-4">
-            <div class="container-xxl p-0">
+        <div class="container-fluid bg-white p-0">
+            <!-- <div class="container-xxl  p-0">
 
                 <h2 class="m-2 text-center">
                     GET INVOLVED
                 </h2>
-                <p class="text-center">
+                <p class="text-center lh-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vitae amet ipsum at expedita excepturi.
                 </p>
-            </div>
+            </div> -->
             <div class="container-xxl ">
-                <div class="row gap-5 my-3  ">
-                    <div class="col  p-0 ">
-                        <div class="container-fluid bg-light shadow px-0 pt-1">
-                            <i class="text-center w-100 mt-4 fas fa-bullhorn icon"></i>
+                <div class="row text-white">
+                    <div class="col  p-4 text-bg-success">
+                        <div class="container-fluid  border  px-0 pt-1">
+                            <i class="text-center  w-100 mt-4 fas fa-bullhorn fa-2x"></i>
                             <h6 class="text-center my-3">
                                 VOLUNTEERING
                             </h6>
 
-                            <div class="container-fluid  p-3">
+                            <!-- <div class="container-fluid  p-3">
                                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class=" col  p-0 ">
-                        <div class="container-fluid bg-light shadow px-0 pt-1" >
-                            <i class="text-center w-100 mt-4 fas fa-donate icon "></i>
+                    <div class=" col  p-4 bg-warning">
+                        <div class="container-fluid  border  px-0 pt-1" >
+                            <i class="text-center  w-100 mt-4 fas fa-donate fa-2x "></i>
                             <h6 class="text-center my-3">
                                 DONATING
                             </h6>
 
-                            <div class="container-fluid  p-3">
+                            <!-- <div class="container-fluid  p-3">
                                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-sm p-0 ">
-                        <div class="container-fluid bg-light shadow px-0 pt-1" >
-                            <i class=" text-center w-100 mt-4 fas fa-hand-holding-heart icon "></i>
+                    <div class="col-sm p-4 text-bg-success">
+                        <div class="container-fluid  border  px-0 pt-1" >
+                            <i class=" text-center  w-100 mt-4 fas fa-hand-holding-heart fa-2x "></i>
                             <h6 class="text-center my-3">
                                 SUPPORTING
                             </h6>
-
+<!-- 
                             <div class="container-fluid  p-3">
                                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="container-fluid p-0 clr-bg">
+        <div class="container-fluid p-0 clr-bg " style="height:400px ;">
             <div class="container-xxl">
                 <div class="row">
                     <div class="col-sm p-0">
@@ -177,7 +181,7 @@
                     <div class="col-sm ">
                         <div class="container px-2 py-4">
                             <h2 class="text-white fw-bolder">Our Mission</h2>
-                            <p class="text-white">
+                            <p class="text-white" style="text-align: justify; width:clamp(30ch,50%,75ch);">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
                             </p>
                             <div class="w-100 text-center text-sm-start">
@@ -188,24 +192,24 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0  py-4">
+        <div class="container-fluid bg-white p-0  py-4 " style="height:400px ;">
             <div class="container-xxl">
                 <h2 class="text-center fw-bolder my-3 ">About Us</h2>
-                <p class=" text-secondry" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
+                 <p class=" text-black lh-base mx-auto" style="text-align: justify; width:clamp(40ch,50%,75ch);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero reprehenderit, eius repellat quaerat dolores fuga ipsum quas natus fugit dolorum voluptatibus. Corporis magnam esse tempore placeat eligendi rerum culpa quia autem, laborum aliquid voluptatum quod ipsa sequi, ad quasi facilis reiciendis repellendus a eveniet odit pariatur est. At, necessitatibus!</p>
                 <div class="w-100 text-center">
-                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto my-2">LEARN MORE</a>
+                    <a href="" class="btn btn-outline-dark rounded-0 mx-auto mb-2 mt-3 mt-md-4">LEARN MORE</a>
                 </div>
 
             </div>
         </div>
-        <div class="container-fluid  px-0 clr-bg">
+        <div class="container-fluid  px-0 clr-bg" style="height:400px ;">
             <div class="container-xxl ">
-                <div class="row flex-column-reverse flex-sm-row">
+                <div class="row flex-column-reverse flex-sm-row align-items-stretch">
 
                     <div class="col-sm ">
                         <div class="container px-2 py-4">
                             <h2 class="text-white fw-bolder">Education For All</h2>
-                            <p class="text-white">
+                            <p class="text-white-50" style="text-align: justify;">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
                             </p>
                             <div class="w-100 text-center text-sm-start">
@@ -214,7 +218,10 @@
                         </div>
                     </div>
                     <div class="col-sm p-0">
-                        <div class="container-fluid px education-img "></div>
+                        <div class="container-fluid p-0 ">
+                            <img src="./images/img-2.jpg" class="" height="350" alt="">
+                            <!-- <img src="https://source.unsplash.com/lXvMlLRhOi8" class="img-fluid rounded-top" alt=""> -->
+                        </div>
                     </div>
 
                 </div>
