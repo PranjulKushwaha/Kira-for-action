@@ -1,10 +1,17 @@
     :root {
-        --clr-bg: #2D2620;
+        --clr-bg: #707274;
+        /* --clr-bg: #674426; */
         --clr-main: #ECC731;
+
+
+        /* 
+
         --bs-navbar-hover-color:#ECC731;
         --color-primary: hsl(34, 100%, 44%);
         --color-secondry: #555d31;
         --color-other: #b22d3a;
+        
+        */
     }
 
 
@@ -18,8 +25,8 @@
         /* border: 1px solid red; */
 
     }
-    
-    .clr-bg , body{
+
+    .clr-bg {
         background-color: var(--clr-bg);
     }
 
@@ -30,7 +37,7 @@
     header {
         transition: background-color 0.1s linear;
     }
-    
+
 
 
     #img-container {
@@ -41,27 +48,25 @@
 
     .mission-img {
         min-height: 300px;
-        max-height: max-content;
-        /* margin: 0 -1rem; */
-        background: url("https://source.unsplash.com/AEaTUnvneik") no-repeat right / cover;
+        background: url("./images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat center / cover;
     }
 
     .education-img {
-        /* min-height: 300px;
-        max-height: max-content; */
-        /* height: 50vw; */
-        height: clamp(300px, 40vh, 40vw);
-        /* margin: 0 -1rem; */
-        background: url("https://source.unsplash.com/lXvMlLRhOi8") no-repeat left / cover;
+        min-height: 300px;
+        background: url("./images/ben-white-83tkHLPgg2Q-unsplash.jpg") no-repeat center / cover;
     }
 
     p {
         font-size: clamp(0.8rem, 3vw, 1rem);
-        /* font-size: 3vw; */
+
     }
 
     h2 {
         font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+    }
+
+    h6 {
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
     }
 
     .footer-link {
@@ -71,14 +76,6 @@
     .footer-link:hover {
         text-decoration: #fff underline;
     }
-
-
-
-    .responsive-img{
-        /* height:max(100vw , 30vw); */
-        height: ;
-    }
-
 
 
 
@@ -105,7 +102,7 @@
     }
 
 
-   
+
 
     .nav-a {
         color: var(--color-secondry) !important;
