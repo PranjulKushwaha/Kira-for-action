@@ -84,7 +84,88 @@
             <h1 class="text-warning">Coming Soon.....</h1>
         </div>
 
-        <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
+          <div class="container-fluid bg-yellow-img ">
+            <div class="container d-flex align-items-center justify-content-center py-5 flex-column">
+                <h1 class="text-light text-center  fw-bolder">
+                    FOLLOW US
+                </h1>
+                <p class="text-white fw-semibold  lh-base ">
+                    Follow us on social Media Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <div class="container-fluid py-3 px-0 d-flex justify-content-center gap-md-5  gap-2 flex-wrap">
+                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
+                        <a href="#" class=" text-warning">
+                            <i class="fab fa-facebook-f  fa-2x text-warning "></i>
+                        </a>
+                    </div>
+                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
+                        <a href="#" class=" text-warning">
+                            <i class="fab fa-twitter  fa-2x text-warning "></i>
+                        </a>
+                    </div>
+                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
+                        <a href="#" class=" text-warning">
+                            <i class="fab fa-instagram  fa-2x text-warning "></i>
+                        </a>
+                    </div>
+                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
+                        <a href="#" class=" text-warning">
+                            <i class="fab fa-youtube  fa-2x text-warning "></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal trigger hidden button  -->
+        <button id="modal-target-button" type="button" class="btn btn-primary btn-lg d-none" data-bs-toggle="modal" data-bs-target="#donatePopUp">
+            Modal
+        </button>
+
+        <!-- Modal Body -->
+        <div class="modal fade" id="donatePopUp" tabindex="-1" role="dialog" aria-labelledby="DonationPopUp" aria-hidden="true" style="background-color:rgb(0,0,0,0.7) ;">
+
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+
+
+                <div class="container-fluid text-bg-dark position-relative shadow-lg">
+                    <button type="button" class="btn-close position-absolute  bg-white rounded-circle " data-bs-dismiss="modal" aria-label="Close" style="top:-20px; right:-20px; ">
+                    </button>
+                    <div class="row">
+                        <div class="col-sm modal-img"></div>
+                        <div class="col-sm">
+                            <div class="container-fluid py-2">
+                                <h4 class=" fw-bolder mt-3 mb-3 lh-sm">SMALL
+                                    <span class="text-warning">EFFORT</span>
+                                    MAKES BIG
+                                    <span class="text-warning">CHANGE</span>
+                                </h4>
+                                <p class="lh-base" style="text-align: justify;">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, atque eum in quae id cum provident? Impedit fuga esse laboriosam tempore similique nam, autem officia vel quidem nesciunt neque eius.
+                                </p>
+                                <div class="w-100 text-center text-sm-start mt-5 mb-3">
+                                    <a href="./donate.html" class="btn btn-outline-warning rounded-0 ">DONATE NOW  &#10095;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Script to trigger Donation POPUP -->
+        <script>
+            const modalTrigger = document.getElementById("modal-target-button");
+            
+            window.addEventListener("load", (event) => {
+                setTimeout(() => {
+                    modalTrigger.click();
+                }, 2000);
+            }, false);
+        </script>
+ <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
 
             <div class="container ">
                 <div class="row">
