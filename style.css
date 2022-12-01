@@ -44,7 +44,7 @@
 
     .modal-img {
         background: url("./images/ismail-salad-osman-hajji-dirir-lXvMlLRhOi8-unsplash.jpg") no-repeat center / cover;
-        min-height: 200px;
+        min-height: 300px;
 
 
     }
@@ -98,11 +98,6 @@
      ********************/
 
 
-     .modal-close-btn{
-        top: -20px;
-        right: -20px;
-    }
-
     @media screen and (max-width: 576px) {
 
         .education-img,
@@ -110,11 +105,7 @@
             height: 300px;
         }
 
-        .modal-close-btn{
-            top: 10px;
-            right: 10px;
-            z-index: 1000;
-        }
+        
     }
 
    
