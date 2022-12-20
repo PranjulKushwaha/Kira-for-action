@@ -28,12 +28,12 @@
 
     .mission-img {
         height: 100%;
-        background: url("./images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat center / cover;
+        background: url("./images/mission.jpeg") no-repeat center / cover;
     }
 
     .education-img {
         height: 100%;
-        background: url("./images/ben-white-83tkHLPgg2Q-unsplash.jpg") no-repeat center / cover;
+        background: url("./images/education.jpg") no-repeat center / cover;
     }
 
     .bg-yellow-img {
@@ -43,7 +43,7 @@
     }
 
     .modal-img {
-        background: url("./images/ismail-salad-osman-hajji-dirir-lXvMlLRhOi8-unsplash.jpg") no-repeat center / cover;
+        background: url("./images/popupjpg.jpg") no-repeat center / cover;
         min-height: 300px;
 
 
