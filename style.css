@@ -58,7 +58,7 @@
 
 
     p {
-        font-size: clamp(1rem, 3vw, 1.1rem);
+        font-size: clamp(0.9rem, 3vw, 1rem);
 
     }
 

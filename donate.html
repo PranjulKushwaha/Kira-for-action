@@ -5,20 +5,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="KIRA for action's mission is to provide opportunities for those who suffer from poverty, by equipping a sustainable community with well-being, food and sharing good news with them.">
-        <title>Donate | Kira For Action</title> 
-        
+        <title>Donate | Kira For Action</title>
+
         <!-- Required link tags -->
         <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="./images/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="stylesheet" href="style.css">
+        <link
+        rel="stylesheet" href="style.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
     </head>
     <body>
-         <header class="container-fluid    sticky-top  clr-bg shadow">
+        <header class="container-fluid    sticky-top  clr-bg shadow">
             <div class="container-xxl p-0 ">
                 <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent py-0">
                     <div class="container-fluid">
@@ -32,11 +35,12 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <h6  id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
+                                <h6 id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
                                 <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent " data-bs-dismiss="offcanvas" aria-label="Close">
-                                     <i class="text-white fas fa-times fa-2x"></i></button>
+                                    <i class="text-white fas fa-times fa-2x"></i>
+                                </button>
                             </div>
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
@@ -79,15 +83,196 @@
             </div>
         </header>
 
-        <div class="container-fluid fw-2x d-flex justify-content-center align-items-center vh-100">
-            <h1 class="text-warning">Coming Soon.....</h1>
+        <div class="container-fluid py-4 " style="height:400px; background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/img-1.jpg') no-repeat center / cover">
+            <h1 class="text-center text-center text-light  fw-bold lh-1 mt-5 mx-auto">
+                CHANGE THE
+                <span class="text-warning">LIFE
+                </span>
+                OF THOSE,
+                <br>
+                WHO HAS NO
+                <span class="text-warning">HOPE</span>
+            </h1>
+            <p class="text-center text-white my-md-4 my-2">
+                Be the reason of someones's smile today
+            </p>
+
         </div>
-          <div class="container-fluid bg-yellow-img ">
+        <div class="container-fluid py-3 px-0 bg-light">
+
+            <div class="container  py-2 mt-lg-3 mb-lg-5 ">
+
+                <div class="row ">
+                    <div class="col-sm">
+                        <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Join us as a member</h4>
+                        <div class="container">
+                            <span class=" w-100 d-block rounded-1 " style="height: 180px;  background: url(./images/mission.jpeg) no-repeat center / cover;"></span>
+                            <p class="px-sm-3 mt-1 lh-sm">
+                                Become a Monthly Contributor and Lorem, ipsum dolor sit amet  velit recusandae?</p>
+                            <div class=" d-flex justify-content-center gap-1 gap-md-2  gap-lg-5 flex-wrap">
+                                <button class="btn btn-dark btn-sm">100$/M</button>
+                                <button class="btn btn-dark btn-sm">200$/M</button>
+                                <button class="btn btn-dark btn-sm">300$/M</button>
+                                <button class="btn btn-dark btn-sm">500$/M</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm mt-5 mt-md-0">
+                        <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Make one-time gift</h4>
+                        <div class="container">
+                            <div class="container">
+
+                                <div class="row row-cols-3">
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(10)">$10</button>
+
+                                    </div>
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(50)">$50</button>
+
+                                    </div>
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(100)">$100</button>
+
+                                    </div>
+
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(250)">$250</button>
+
+                                    </div>
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(500)">$500</button>
+
+                                    </div>
+                                    <div class="col p-1 p-md-3">
+                                        <button class="btn btn-dark w-100" onclick="setAmount(1000)">$1000</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-group my-3 px-1 ">
+                                <input type="number" id="inputAmount" class="form-control " min="10" step="50" oninput="handleButton(this.value)" aria-label="Amount (in dollar)" placeholder="Name Your Amount , may be 600$ ?">
+                                <span class="input-group-text">$</span>
+                            </div>
+
+
+                            <button id="donateButton" class=" btn btn-warning w-100 mt-2 disabled" onclick="donate()">Donate</button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5 shadow-lg rounded-3 py-5 text-center d-none" id="payPalContainer">
+
+
+                    <div class="container ">
+                        <h6 class="text-dark text-center my-2 pb-4" id="Payment_text_container"></h6>
+                    </div>
+                    <div class="" id="smart-button-container">
+
+                        <div id="paypal-button-container"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                let donateButton = document.getElementById("donateButton");
+
+                function setAmount(amount) {
+
+                    document.getElementById("inputAmount").value = amount;
+                    donateButton.classList.remove("disabled")
+
+                }
+
+                function handleButton(value) {
+                    if (value > 10) {
+                        donateButton.classList.remove("disabled")
+                    } else {
+                        donateButton.classList.add("disabled")
+                    }
+                }
+                function donate() {
+
+                    inputAmount = document.getElementById("inputAmount");
+                    inputAmount.disabled = true;
+                    donateButton.classList.add("disabled")
+
+                    let payPalContainer = document.getElementById("payPalContainer");
+                    payPalContainer.classList.remove("d-none")
+                    payPalContainer.scrollIntoView(false);
+
+                    document.getElementById("Payment_text_container").innerHTML = 'One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline">  ' + inputAmount.value + ' $ </span> to KIRA FOR ACTION';
+
+
+                }
+
+                function initPayPalButton() {
+                    paypal.Buttons({
+                        style: {
+                            shape: 'rect',
+                            color: 'blue',
+                            layout: 'vertical',
+                            label: 'pay'
+
+                        },
+
+
+                        createOrder: function (data, actions) {
+                            return actions.order.create({
+                                purchase_units: [
+                                    {
+                                        "amount": {
+                                            "currency_code": "USD",
+                                            "value": document.getElementById("inputAmount").value
+                                        }
+                                    }
+                                ]
+                            });
+                        },
+
+
+                        onApprove: function (data, actions) {
+                            return actions.order.capture().then(function (orderData) { // Full available details
+                                console.table('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                                document.getElementById("payPalContainer").innerHTML = ' <div class="container">' + ' <img src="./images/done.png" class="mx-auto" alt="Payment completed image" height="50">' + '<h5 class="text-secondary mt-2">Payment Successful</h5>' + '<p class="text-secondary text-center ">Thank you for Your Payment , For more details check your email.' + '</p>' + ' </div>'
+
+                            });
+                        },
+
+                        onError: function (err) {
+                            document.getElementById("payPalContainer").innerHTML = ' <div class="container">' + ' <img src="./images/error.png" class="mx-auto" alt="Payment completed image" height="50">' + ' <h5 class="text-danger mt-2">Payment Failed</h5>' + ' <p class="text-danger text-center ">We are sorry for the Inconvenience Caused , Please retry.' + ' </p>' + ' </div>'
+                        }
+                    }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+            </script>
+
+
+            <div class="container mt-5">
+                <p class="text-center mb-0">
+                    Transactions are secured and processed by Paypal , For any query or issue Please
+                    <a href="./contact.html" class="fw-bold text-primary">Contact</a>
+                    us.
+                </p>
+                <p class="text-center fw-semibold">
+                    KIRA-FOR-ACTION  is registered organization under Lorem ipsum dolor sit.
+                </p>
+            </div>
+
+        </div>
+       
+            
+
+        <div class="container-fluid bg-yellow-img ">
             <div class="container d-flex align-items-center justify-content-center py-5 flex-column">
                 <h1 class="text-light text-center  fw-bolder">
                     FOLLOW US
                 </h1>
-                <p class="text-white fw-semibold  lh-base ">
+                <p class="text-white  lh-base ">
                     Follow us on social Media Lorem ipsum dolor sit amet consectetur.
                 </p>
                 <div class="container-fluid py-3 px-0 d-flex justify-content-center gap-md-5  gap-2 flex-wrap">
@@ -116,33 +301,32 @@
 
             </div>
         </div>
-      
- <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
 
+        <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
             <div class="container ">
                 <div class="row">
                     <div class="col-sm ">
                         <div class="container-fluid">
                             <h6 class="text-warning  text-center w-100">ORGANIZATION</h6>
-                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./index.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">HOME</p>
+                                        <p class="text-white mb-1 ">Home</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./aboutUs.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">ABOUT</p>
+                                        <p class="text-white mb-1  ">About</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./contact.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">CONTACT</p>
+                                        <p class="text-white mb-1  ">Contact</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./donate.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">DONATE</p>
+                                        <p class="text-white mb-1  ">Donate</p>
                                     </a>
                                 </li>
                             </ul>
@@ -151,25 +335,25 @@
                     <div class="col-sm ">
                         <div class="container-fluid">
                             <h6 class="text-warning  text-center w-100">DISCOVER</h6>
-                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./Gallery.html#photographs" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">PHOTOGRAPHS</p>
+                                        <p class="text-white mb-1 ">Photographs</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./Gallery.html#videos" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">VIDEOS</p>
+                                        <p class="text-white mb-1 ">Videos</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./stories.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">STORIES</p>
+                                        <p class="text-white mb-1 ">Stories</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./FAQ.html" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">FAQ</p>
+                                        <p class="text-white mb-1 ">FAQ</p>
                                     </a>
                                 </li>
                             </ul>
@@ -179,20 +363,20 @@
                     <div class="col-sm ">
                         <div class="container-fluid">
                             <h6 class="text-warning  text-center w-100">ABOUT</h6>
-                            <ul class="list-unstyled d-flex gap-2 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
                                 <li class="">
                                     <a href="./aboutUs.html#OurVision" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">OUR VISION</p>
+                                        <p class="text-white mb-1 ">Our Vision</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./aboutUs.html#ourMission" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">OUR MISSION</p>
+                                        <p class="text-white mb-1 ">Our Mission</p>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="./aboutUs.html#education" class=" footer-link  ">
-                                        <p class="text-white fw-semibold">EDUCATION</p>
+                                        <p class="text-white mb-1 ">Education</p>
                                     </a>
                                 </li>
 
@@ -202,15 +386,13 @@
                     <div class="col-sm ">
                         <div class="container-fluid">
                             <h6 class="text-warning  text-center w-100">CONTACT</h6>
-                            <p class="text-white text-center  fw-semibold">
-                                ADDRESSS
-                            </p>
 
                             <p class="text-white  fw-semibold mx-auto" style="width: max-content;">
-                                <b>Kira For Action</b> <br>
+                                <b>Kira For Action</b>
+                                <br>
                                 Austin , Texas<br><a href="tel:+1 (737) 781-4758" class="footer-link">
-                                        +1 (737) 781-4758
-                         </a><br><a href="mailto:kiraforaction@gmail.com" class="footer-link">kiraforaction@gmail.com</a>
+                                    +1 (737) 781-4758
+                                </a><br><a href="mailto:kiraforaction@gmail.com" class="footer-link">kiraforaction@gmail.com</a>
                             </p>
 
 
