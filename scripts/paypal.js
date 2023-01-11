@@ -82,7 +82,7 @@ function donate() {
 		script.onload = () => {
 			clearTimeout(warn1);
 			initPayPalButton();
-			Payment_text_container.innerHTML = `<h6 class="text-dark text-center my-2 pb-4" >One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline">  ${inputAmount.value} \$ </span> to KIRA FOR ACTION </h6>`;
+			Payment_text_container.innerHTML = `<h6 class="text-dark text-center my-2 pb-4" >One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline"> \$ ${inputAmount.value}  </span> to KIRA FOR ACTION </h6>`;
 
 
 		}
