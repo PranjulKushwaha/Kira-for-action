@@ -1,12 +1,36 @@
+
 let donateButton = document.getElementById("donateButton");
 let inputAmount = document.getElementById("inputAmount");
 let subscriptionButton = document.getElementById("subscriptionButton");
 let payPalContainer = document.getElementById("payPalContainer");
+let paypal_button_container = document.getElementById("paypal-button-container");
 let Payment_text_container = document.getElementById("Payment_text_container");
 let planButtons = document.querySelectorAll(".planButtons");
 let amoutnBtn = document.querySelectorAll(".amoutnBtn");
 let choosedPlanId;
 let choosedPlanValue;
+
+
+// AWfwgYC8O0eQ5_3mgqGAtn15Qx4uQh0U4zy3GMQfJvfm5FRY6PfjYk0zylHTtgMzQAtudv5H7T5G-FH7
+
+let client_id = 'AcgvIvR6e-5Hk1Nm_YYhMs3ZnafSfk4ziDhXmiRJqVSzcMnNnCqKh5ctL9rAPIUo7ONKjX2LYTezUfX0';
+let one_time_payment_variables = '&enable-funding=venmo&currency=USD';
+let subscription_variables = '&currency=USD&intent=subscription&vault=true';
+let PAYPAL_SCRIPT = 'https://www.paypal.com/sdk/js?client-id=' + client_id;
+
+
+function create_script(variables, cllbback) {
+	let source = PAYPAL_SCRIPT + variables;
+	console.log(source);
+	var script = document.createElement('script');
+	script.setAttribute('src', source);
+	script.setAttribute('id', 'paypalScript');
+	document.head.appendChild(script);
+
+	cllbback(script);
+
+};
+
 
 
 
@@ -47,11 +71,31 @@ function donate() {
 	donateButton.classList.add("disabled");
 
 	payPalContainer.classList.remove("d-none");
-	payPalContainer.scrollIntoView(false);
+	paypPalCntainer.scrollIntoView(false);
+	Payment_text_container.innerHTML = '';
+	paypal_button_container.innerHTML = `<div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>`;
 
-	Payment_text_container.innerHTML = `One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline">  ${inputAmount.value} \$ </span> to KIRA FOR ACTION`;
+	const warn1 = setTimeout(() => {
+		paypal_button_container.innerHTML += `<p class="text-danger text-center mt-3 fw-semibold " > Seems Slow network .Please Try again Later</p>`
+	}, 2500);
 
-	initPayPalButton();
+	create_script(one_time_payment_variables, (script) => {
+		script.onload = () => {
+			clearTimeout(warn1);
+			initPayPalButton();
+			Payment_text_container.innerHTML = `<h6 class="text-dark text-center my-2 pb-4" >One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline">  ${inputAmount.value} \$ </span> to KIRA FOR ACTION </h6>`;
+
+			console.log('loaded');
+		}
+	});
+
+
+
+
+
+
+
+
 }
 
 
@@ -61,6 +105,7 @@ function donate() {
 // getting plan id and value from the Button (monthly plan  choosed by user )
 
 function setPlan(id, value, btnObj) {
+
 
 	choosedPlanId = id;
 	choosedPlanValue = value;
@@ -84,16 +129,26 @@ function createSubscription() {
 
 	payPalContainer.classList.remove("d-none");
 	payPalContainer.scrollIntoView(false);
-
-	Payment_text_container.innerHTML = `Monthly donation of   <span class="fw-bold text-underline text-success text-decoration-underline"> \$ ${choosedPlanValue}  </span> to KIRA FOR ACTION`;
-
-	initSubscriptionButton(choosedPlanId);
-
 	subscriptionButton.classList.add("disabled");
+	Payment_text_container.innerHTML = '';
+	paypal_button_container.innerHTML = `<div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>`;
+
+	const warn2 = setTimeout(() => {
+		paypal_button_container.innerHTML += `<p class="text-danger text-center mt-3 fw-semibold " > Seems Slow network .Please  Try Again Later</p>`
+	}, 2500);
+
+
+	create_script(subscription_variables, (script) => {
+		script.onload = () => {
+			clearTimeout(warn2);
+			Payment_text_container.innerHTML = `<h6 class="text-dark text-center my-2 pb-4" >Monthly donation of   <span class="fw-bold text-underline text-success text-decoration-underline"> \$ ${choosedPlanValue}  </span> to KIRA FOR ACTION </h6>`;
+
+			initSubscriptionButton(choosedPlanId);
+		}
+	});
+
 
 }
-
-
 
 
 

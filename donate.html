@@ -1,393 +1,407 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="KIRA for action's mission is to provide opportunities for those who suffer from poverty, by equipping a sustainable community with well-being, food and sharing good news with them.">
-        <title>Donate | Kira For Action</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="KIRA for action's mission is to provide opportunities for those who suffer from poverty, by equipping a sustainable community with well-being, food and sharing good news with them.">
+    <title>Donate | Kira For Action</title>
 
-        <!-- Required link tags -->
-        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="./images/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link
-        rel="stylesheet" href="style.css">
+    <!-- Required link tags -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-        <!-- paypal sdk -->
+    <!-- paypal sdk -->
 
-  
-     <!-- <script src="https://www.paypal.com/sdk/js?client-id=AU2rzxtz4mO101eH8vQLddh4MXP6syYqwXEP0Mb1MLO2A1amsLpLkTNSpqpN_E17DTqFjZSIsl3JRx9Y&components=buttons&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script> -->
-     <script src="https://www.paypal.com/sdk/js?client-id=AcgvIvR6e-5Hk1Nm_YYhMs3ZnafSfk4ziDhXmiRJqVSzcMnNnCqKh5ctL9rAPIUo7ONKjX2LYTezUfX0&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-     
-  
+</head>
+
+<body >
+
+
+    <header class="container-fluid    sticky-top  clr-bg shadow">
+        <div class="container-xxl p-0 ">
+            <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent py-0">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand d-flex align-items-center gap-1 " href="./index.html">
+                        <img src="./images/logo.png" alt="logo" height="50" class="navbar-logo me-1 me-lg-3">
+                        <h4 class="text-warning mb-0">KIRA FOR ACTION</h4>
+                    </a>
+
+                    <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        onfocus="this.style.boxShadow = 'none'">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h6 id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
+                            <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent "
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="text-white fas fa-times fa-2x"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
+
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./index.html">HOME</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownAbout"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownAbout">
+                                        <a class="dropdown-item" href="./aboutUs.html#ourMission">Our Mission</a>
+                                        <a class="dropdown-item" href="./aboutUs.html#ourVision">Our Vision</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownDiscover"
+                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">DISCOVER</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownDiscover">
+                                        <a class="dropdown-item" href="./Gallery.html#photographs">Photographs</a>
+                                        <a class="dropdown-item" href="./Gallery.html#videos">Videos</a>
+                                        <a class="dropdown-item" href="./stories.html">Stories</a>
+                                        <a class="dropdown-item" href="./FAQ.html">FAQ</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./donate.html">DONATE</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid py-4 "
+        style="height:400px; background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/img-1.jpg') no-repeat center / cover">
+        <h1 class="text-center text-center text-light  fw-bold lh-1 mt-5 mx-auto">
+            CHANGE THE
+            <span class="text-warning">LIFE
+            </span>
+            OF THOSE,
+            <br>
+            WHO HAS NO
+            <span class="text-warning">HOPE</span>
+        </h1>
+        <p class="text-center text-white my-md-4 my-2">
+            Be the reason of someones's smile today
+        </p>
+
+    </div>
+
+
+    <div class="container-fluid py-3 px-0 bg-light">
+
+        <div class="container  py-2 mt-lg-3 mb-lg-5 ">
+
+            <div class="row ">
+                <div class="col-md">
+                    <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Join us as a member</h4>
+                    <div class="container">
+                        <div class="container">
+
+                            <div class="row row-cols-2">
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-77924017DC150915YMO6O2WI',10 ,this);">$10 / Month</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-7W68082009401312PMO6O4TI',50,this)">$50 / Month</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-0VW1998581649563GMO6O4ZQ',100,this)">$100 / Month</button>
+
+                                </div>
+
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-43F99014MA378311GMO6O5EA',250,this)">$250 / Month</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-3MJ55799D63086240MO6PFAI',500,this)">$500 / Month</button>
+
+                                </div>
+
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 shadow planButtons "
+                                        onclick="setPlan('P-5EG42125W8409583DMO6PFFQ ',700,this)">$700 / Month</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="container">
+                            <button id="subscriptionButton" class=" btn btn-warning w-100 mt-2  disabled"
+                                onclick="createSubscription()">Set up Monthly Donation</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md mt-5 mt-md-0">
+                    <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Make one-time gift</h4>
+                    <div class="container">
+                        <div class="container">
+
+                            <div class="row row-cols-3">
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(10)">$10</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(50)">$50</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(100)">$100</button>
+
+                                </div>
+
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(250)">$250</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(500)">$500</button>
+
+                                </div>
+                                <div class="col p-1 p-md-3">
+                                    <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(1000)">$1000</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="container">
+
+                            <div class="input-group my-3 px-1 ">
+                                <input type="number" id="inputAmount" class="form-control " min="1" step="50"
+                                    oninput="handleButton(this.value)" aria-label="Amount (in dollar)"
+                                    placeholder="Name Your Amount , may be 600$ ?">
+                                <span class="input-group-text">$</span>
+                            </div>
+
+                            <button id="donateButton" class=" btn btn-primary w-100 mt-2  disabled"
+                                onclick="donate()">Donate One Time</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mt-5 shadow-lg rounded-3 pt-3 pb-1 text-center d-none" id="payPalContainer">
+                
+                <div class="container" id="Payment_text_container"> </div>
+                <div id="paypal-button-container"></div>
+
+            </div>
+        </div>
         
-        <!-- kiraforaction sandbox client id for one time PAYMENT  -->
-
-        <script src="https://www.paypal.com/sdk/js?client-id=AcgvIvR6e-5Hk1Nm_YYhMs3ZnafSfk4ziDhXmiRJqVSzcMnNnCqKh5ctL9rAPIUo7ONKjX2LYTezUfX0&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-           
-        <!-- kiraforaction LIVE client id  for one time PAYMENT -->
-
-        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AWfwgYC8O0eQ5_3mgqGAtn15Qx4uQh0U4zy3GMQfJvfm5FRY6PfjYk0zylHTtgMzQAtudv5H7T5G-FH7&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script> -->
-
-    </head>
-    <body>
-       
-
-        <header class="container-fluid    sticky-top  clr-bg shadow">
-            <div class="container-xxl p-0 ">
-                <nav class="navbar navbar-dark  navbar-expand-md  bg-transparent py-0">
-                    <div class="container-fluid">
-
-                        <a class="navbar-brand d-flex align-items-center gap-1 " href="./index.html">
-                            <img src="./images/logo.png" alt="logo" height="50" class="navbar-logo me-1 me-lg-3">
-                            <h4 class="text-warning mb-0">KIRA FOR ACTION</h4>
-                        </a>
-
-                        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onfocus="this.style.boxShadow = 'none'">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h6 id="offcanvasNavbarLabel" class="offcanvas-title text-warning mb-0">KIRA FOR ACTION</h6>
-                                <button type="button" onfocus="this.style.border='none'" class=" border-0 bg-transparent " data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <i class="text-white fas fa-times fa-2x"></i>
-                                </button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-center gap-1 gap-lg-5 flex-grow-1">
-
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="./index.html">HOME</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownAbout" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownAbout">
-                                            <a class="dropdown-item" href="./aboutUs.html#ourMission">Our Mission</a>
-                                            <a class="dropdown-item" href="./aboutUs.html#ourVision">Our Vision</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="dropdownDiscover" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownDiscover">
-                                            <a class="dropdown-item" href="./Gallery.html#photographs">Photographs</a>
-                                            <a class="dropdown-item" href="./Gallery.html#videos">Videos</a>
-                                            <a class="dropdown-item" href="./stories.html">Stories</a>
-                                            <a class="dropdown-item" href="./FAQ.html">FAQ</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="./donate.html">DONATE</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="./contact.html">CONTACT</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <div class="container-fluid py-4 " style="height:400px; background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('./images/img-1.jpg') no-repeat center / cover">
-            <h1 class="text-center text-center text-light  fw-bold lh-1 mt-5 mx-auto">
-                CHANGE THE
-                <span class="text-warning">LIFE
-                </span>
-                OF THOSE,
-                <br>
-                WHO HAS NO
-                <span class="text-warning">HOPE</span>
-            </h1>
-            <p class="text-center text-white my-md-4 my-2">
-                Be the reason of someones's smile today
-            </p>
-
-        </div>
-
-
-        <div class="container-fluid py-3 px-0 bg-light">
-
-            <div class="container  py-2 mt-lg-3 mb-lg-5 ">
-
-                <div class="row ">
-                    <div class="col-md">
-                        <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Join us as a member</h4>
-                        <div class="container">
-                            <div class="container">
-
-                                <div class="row row-cols-2">
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-77924017DC150915YMO6O2WI',10 ,this);">$10 / Month</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-7W68082009401312PMO6O4TI',50,this)">$50 / Month</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-0VW1998581649563GMO6O4ZQ',100,this)">$100 / Month</button>
-
-                                    </div>
-
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-43F99014MA378311GMO6O5EA',250,this)">$250 / Month</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-3MJ55799D63086240MO6PFAI',500,this)">$500 / Month</button>
-
-                                    </div>
-
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 shadow planButtons " onclick="setPlan('P-5EG42125W8409583DMO6PFFQ ',700,this)">$700 / Month</button>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="container">
-                                <button id="subscriptionButton" class=" btn btn-warning w-100 mt-2  disabled" onclick="createSubscription()">Set up Monthly Donation</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md mt-5 mt-md-0">
-                        <h4 class="text-dark fw-bolder mx-auto text-center text-uppercase mb-4">Make one-time gift</h4>
-                        <div class="container">
-                            <div class="container">
-
-                                <div class="row row-cols-3">
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(10)">$10</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(50)">$50</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(100)">$100</button>
-
-                                    </div>
-
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(250)">$250</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(500)">$500</button>
-
-                                    </div>
-                                    <div class="col p-1 p-md-3">
-                                        <button class="btn btn-dark w-100 amoutnBtn" onclick="setAmount(1000)">$1000</button>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="container">
-
-                                <div class="input-group my-3 px-1 ">
-                                    <input type="number" id="inputAmount" class="form-control " min="1" step="50" oninput="handleButton(this.value)" aria-label="Amount (in dollar)" placeholder="Name Your Amount , may be 600$ ?">
-                                    <span class="input-group-text">$</span>
-                                </div>
-
-                                <button id="donateButton" class=" btn btn-primary w-100 mt-2  disabled" onclick="donate()">Donate One Time</button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="container mt-5 shadow-lg rounded-3 pt-3 pb-1 text-center d-none" id="payPalContainer">
-
-
-                    <div class="container ">
-                        <h6 class="text-dark text-center my-2 pb-4" id="Payment_text_container"></h6>
-                    </div>
-                    <div class="" id="smart-button-container">
-
-                        <div id="paypal-button-container"></div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container mt-5">
-                <p class="text-center mb-0">
-                    Transactions are secured and processed by Paypal , For any query or issue Please
-                    <a href="./contact.html" class="fw-bold text-primary">Contact</a>
-                    us.
-                </p>
-                <p class="text-center fw-semibold">
-                    KIRA-FOR-ACTION  is registered organization under Lorem ipsum dolor sit.
-                </p>
-            </div>
-
-        </div>
-      
-
-        <div id="paypal-button-container-P-9X920729RR847915TMO5KZUY"></div>
-
-        <div class="container-fluid bg-yellow-img ">
-            <div class="container d-flex align-items-center justify-content-center py-5 flex-column">
-                <h1 class="text-light text-center  fw-bolder">
-                    FOLLOW US
-                </h1>
-                <p class="text-white  lh-base ">
-                    Follow us on social Media Lorem ipsum dolor sit amet consectetur.
-                </p>
-                <div class="container-fluid py-3 px-0 d-flex justify-content-center gap-md-5  gap-2 flex-wrap">
-                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
-                        <a href="#" class=" text-warning">
-                            <i class="fab fa-facebook-f  fa-2x text-warning "></i>
-                        </a>
-                    </div>
-                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
-                        <a href="#" class=" text-warning">
-                            <i class="fab fa-twitter  fa-2x text-warning "></i>
-                        </a>
-                    </div>
-                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
-                        <a href="#" class=" text-warning">
-                            <i class="fab fa-instagram  fa-2x text-warning "></i>
-                        </a>
-                    </div>
-                    <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center " style="height:55px ; width:55px; ">
-                        <a href="#" class=" text-warning">
-                            <i class="fab fa-youtube  fa-2x text-warning "></i>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-sm ">
-                        <div class="container-fluid">
-                            <h6 class="text-warning  text-center w-100">ORGANIZATION</h6>
-                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
-                                <li class="">
-                                    <a href="./index.html" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Home</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./aboutUs.html" class=" footer-link  ">
-                                        <p class="text-white mb-1  ">About</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./contact.html" class=" footer-link  ">
-                                        <p class="text-white mb-1  ">Contact</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./donate.html" class=" footer-link  ">
-                                        <p class="text-white mb-1  ">Donate</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm ">
-                        <div class="container-fluid">
-                            <h6 class="text-warning  text-center w-100">DISCOVER</h6>
-                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
-                                <li class="">
-                                    <a href="./Gallery.html#photographs" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Photographs</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./Gallery.html#videos" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Videos</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./stories.html" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Stories</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./FAQ.html" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">FAQ</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm ">
-                        <div class="container-fluid">
-                            <h6 class="text-warning  text-center w-100">ABOUT</h6>
-                            <ul class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
-                                <li class="">
-                                    <a href="./aboutUs.html#OurVision" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Our Vision</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./aboutUs.html#ourMission" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Our Mission</p>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="./aboutUs.html#education" class=" footer-link  ">
-                                        <p class="text-white mb-1 ">Education</p>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm ">
-                        <div class="container-fluid">
-                            <h6 class="text-warning  text-center w-100">CONTACT</h6>
-
-                            <p class="text-white  fw-semibold mx-auto" style="width: max-content;">
-                                <b>Kira For Action</b>
-                                <br>
-                                Austin , Texas<br><a href="tel:+1 (737) 781-4758" class="footer-link">
-                                    +1 (737) 781-4758
-                                </a><br><a href="mailto:kiraforaction@gmail.com" class="footer-link">kiraforaction@gmail.com</a>
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="container p-3 border-top border-white ">
-                    <p class="text-white text-center fw-semibold ">
-                        Copyright &copy; 2023 KIRA FOR ACTION.</p>
-                </div>
-            </div>
-        </footer>
-
         <!-- render paypal button -->
         <script src="./scripts/paypal.js"></script>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    </body>
+
+
+        <div class="container mt-5">
+            <p class="text-center mb-0">
+                Transactions are secured and processed by Paypal , For any query or issue Please
+                <a href="./contact.html" class="fw-bold text-primary">Contact</a>
+                us.
+            </p>
+            <p class="text-center fw-semibold">
+                KIRA-FOR-ACTION is registered organization under Lorem ipsum dolor sit.
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid bg-yellow-img ">
+        <div class="container d-flex align-items-center justify-content-center py-5 flex-column">
+            <h1 class="text-light text-center  fw-bolder">
+                FOLLOW US
+            </h1>
+            <p class="text-white  lh-base ">
+                Follow us on social Media Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <div class="container-fluid py-3 px-0 d-flex justify-content-center gap-md-5  gap-2 flex-wrap">
+                <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center "
+                    style="height:55px ; width:55px; ">
+                    <a href="#" class=" text-warning">
+                        <i class="fab fa-facebook-f  fa-2x text-warning "></i>
+                    </a>
+                </div>
+                <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center "
+                    style="height:55px ; width:55px; ">
+                    <a href="#" class=" text-warning">
+                        <i class="fab fa-twitter  fa-2x text-warning "></i>
+                    </a>
+                </div>
+                <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center "
+                    style="height:55px ; width:55px; ">
+                    <a href="#" class=" text-warning">
+                        <i class="fab fa-instagram  fa-2x text-warning "></i>
+                    </a>
+                </div>
+                <div class="rounded-circle bg-light shadow-lg  d-flex align-items-center justify-content-center "
+                    style="height:55px ; width:55px; ">
+                    <a href="#" class=" text-warning">
+                        <i class="fab fa-youtube  fa-2x text-warning "></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid  pt-5 px-0 text-white clr-bg">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm ">
+                    <div class="container-fluid">
+                        <h6 class="text-warning  text-center w-100">ORGANIZATION</h6>
+                        <ul
+                            class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <li class="">
+                                <a href="./index.html" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Home</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./aboutUs.html" class=" footer-link  ">
+                                    <p class="text-white mb-1  ">About</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./contact.html" class=" footer-link  ">
+                                    <p class="text-white mb-1  ">Contact</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./donate.html" class=" footer-link  ">
+                                    <p class="text-white mb-1  ">Donate</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="container-fluid">
+                        <h6 class="text-warning  text-center w-100">DISCOVER</h6>
+                        <ul
+                            class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <li class="">
+                                <a href="./Gallery.html#photographs" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Photographs</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./Gallery.html#videos" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Videos</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./stories.html" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Stories</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./FAQ.html" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">FAQ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm ">
+                    <div class="container-fluid">
+                        <h6 class="text-warning  text-center w-100">ABOUT</h6>
+                        <ul
+                            class="list-unstyled d-flex gap-1 flex-sm-column justify-content-center justify-content-sm-start flex-wrap align-content-center">
+                            <li class="">
+                                <a href="./aboutUs.html#OurVision" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Our Vision</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./aboutUs.html#ourMission" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Our Mission</p>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./aboutUs.html#education" class=" footer-link  ">
+                                    <p class="text-white mb-1 ">Education</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="container-fluid">
+                        <h6 class="text-warning  text-center w-100">CONTACT</h6>
+
+                        <p class="text-white  fw-semibold mx-auto" style="width: max-content;">
+                            <b>Kira For Action</b>
+                            <br>
+                            Austin , Texas<br><a href="tel:+1 (737) 781-4758" class="footer-link">
+                                +1 (737) 781-4758
+                            </a><br><a href="mailto:kiraforaction@gmail.com"
+                                class="footer-link">kiraforaction@gmail.com</a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container p-3 border-top border-white ">
+                <p class="text-white text-center fw-semibold ">
+                    Copyright &copy; 2023 KIRA FOR ACTION.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
