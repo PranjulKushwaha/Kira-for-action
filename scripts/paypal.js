@@ -71,7 +71,7 @@ function donate() {
 	donateButton.classList.add("disabled");
 
 	payPalContainer.classList.remove("d-none");
-	paypPalCntainer.scrollIntoView(false);
+	payPalContainer.scrollIntoView(false);
 	Payment_text_container.innerHTML = '';
 	paypal_button_container.innerHTML = `<div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"><span class="visually-hidden">Loading...</span></div>`;
 
@@ -88,12 +88,6 @@ function donate() {
 			console.log('loaded');
 		}
 	});
-
-
-
-
-
-
 
 
 }
