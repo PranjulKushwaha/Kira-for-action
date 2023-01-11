@@ -21,7 +21,6 @@ let PAYPAL_SCRIPT = 'https://www.paypal.com/sdk/js?client-id=' + client_id;
 
 function create_script(variables, cllbback) {
 	let source = PAYPAL_SCRIPT + variables;
-	console.log(source);
 	var script = document.createElement('script');
 	script.setAttribute('src', source);
 	script.setAttribute('id', 'paypalScript');
@@ -85,7 +84,7 @@ function donate() {
 			initPayPalButton();
 			Payment_text_container.innerHTML = `<h6 class="text-dark text-center my-2 pb-4" >One time donation of   <span class="fw-bold text-underline text-success text-decoration-underline">  ${inputAmount.value} \$ </span> to KIRA FOR ACTION </h6>`;
 
-			console.log('loaded');
+
 		}
 	});
 
